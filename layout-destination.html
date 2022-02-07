@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism - Destination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/destination.css">
+    <link rel="stylesheet" href="css/shared.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__div">
+            <img class="header__logo" src="assets/shared/logo.svg" alt="Space Tourism web site logo">
+        </div>
+        <hr class="header__hr">
+        <nav class="header__navbar">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link is-hover-active" href="index.html" target="_self" rel="prev" hreflang="en" aria-label="Go to home"><strong>00</strong> HOME</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link is-active" href="layout-destination.html" aria-label="Go to destinations"><strong>01</strong> DESTINATION</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link is-hover-active" href="layout-crew.html" target="_self" rel="next" hreflang="en" aria-label="Go to crew"><strong>02</strong> CREW</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link is-hover-active" href="layout-technology.html" target="_self" rel="next" hreflang="en" aria-label="Go to technologies"><strong>03</strong> TECHNOLOGY</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Destination Header -->
+    <main class="destination">
+        <aside class="destination__aside">
+            <ul class="destination__list">
+                <li class="destination__item">01</li>
+                <li class="destination__item">PICK YOUR DESTINATION</li>
+            </ul>
+            <img class="destination__img" src="assets/destination/image-moon.png" alt="Destination Moon, image">
+        </aside>
+        <!-- Destination Aside-->
+        <section class="destination__section">
+            <ul class="destination__list">
+                <li class="destination__item">
+                    <a role="button" data-type="moon" class="destination__link is-active-destination" onclick="changeDestination(this)">MOON</a>
+                </li>
+                <li class="destination__item">
+                    <a role="button" data-type="mars" class="destination__link" onclick="changeDestination(this)">MARS</a>
+                </li>
+                <li class="destination__item">
+                    <a role="button" data-type="europa" class="destination__link" onclick="changeDestination(this)">EUROPA</a>
+                </li>
+                <li class="destination__item">
+                    <a role="button" data-type="titan" class="destination__link" onclick="changeDestination(this)">TITAN</a>
+                </li>
+            </ul>
+            <h1 class="destination__title">MOON</h1>
+            <p class="destination__description">See our planet as you've never seen it before. A perfect <br> relaxing trip away to help regain perspective and come <br> back refreshed. While you're there, take in some history <br>by visiting the Luna 2 and Apollo 11 landing sites.</p>
+            <hr class="destination__hr">
+            <ul class="destination__list">
+                <li class="destination__item">AVG. DISTANCE <br> <span id="distance" class="is-value">384,400 KM</span></li>
+                <li class="destination__item">EST. TRAVEL TIME <br> <span id="travel-time" class="is-value">3 DAYS</span></li>
+            </ul>
+        </section>
+        <!-- Destination Section -->
+    </main>
+    <!-- Destination Main -->
+    <script src="js/destination.js"></script>
+</body>
+
+</html>

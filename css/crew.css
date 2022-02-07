@@ -1,0 +1,128 @@
+/* 1. Gerais
+/* 2. Container
+/* 3. Header
+/* 4. Main - Crew
+/**************/
+
+
+/* 1. Gerais
+/**************/
+
+body {
+    background-image: url(/assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-clear);
+}
+
+a {
+    color: var(--primary-clear);
+}
+
+
+/**************/
+
+
+/* 2. Container
+/**************/
+
+.crew {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+
+/**************/
+
+
+/* 3. Header
+/**************/
+
+.header .header__navbar {
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+}
+
+
+/**************/
+
+
+/* 4. Crew
+/**************/
+
+.crew .crew__section {
+    width: 650px;
+    margin: 0 2rem;
+}
+
+.crew .crew__section .crew__title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    letter-spacing: 4.75px;
+    margin-bottom: 7rem;
+}
+
+.crew .crew__section .crew__subtitle {
+    color: rgba(128, 128, 128, 0.699);
+}
+
+.crew .crew__article .crew__caption {
+    color: rgba(128, 128, 128, 0.699);
+    font-family: var(--font-sub-heading);
+    font-size: 2rem;
+}
+
+.crew .crew__article .crew__title-name {
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.crew .crew__article .crew__text {
+    font-family: var(--font-text);
+    color: var(--primary-assets);
+    font-size: .90rem;
+    line-height: .7cm;
+    width: 100%;
+    height: 170px;
+}
+
+.crew .crew__list .crew__item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.crew__button {
+    background-color: var(--slider-button);
+    border: none;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.crew .crew__list .crew__item>button:hover {
+    background-color: rgba(128, 128, 128, 0.877);
+}
+
+.crew .crew__list .crew__item>button:active {
+    background-color: var(--primary-assets);
+}
+
+.is-active-slider {
+    background-color: var(--primary-assets);
+}
+
+.crew__aside {
+    width: 400px;
+    height: 100%;
+}
+
+.crew__aside img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/**************/

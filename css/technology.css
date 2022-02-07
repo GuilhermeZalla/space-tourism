@@ -1,0 +1,152 @@
+/* 1. Gerais
+/* 2. Container
+/* 3. Header
+/* 4. Main - Technology
+/**************/
+
+
+/* 1. Gerais
+/**************/
+
+body {
+    background-image: url(/assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-clear);
+}
+
+a {
+    color: var(--primary-clear);
+}
+
+
+/**************/
+
+
+/* 2. Container
+/**************/
+
+.technology {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 4rem 0;
+}
+
+
+/**************/
+
+
+/* 3. Header
+/**************/
+
+.header .header__navbar {
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+}
+
+
+/**************/
+
+
+/* 4. Main - Technology
+/**************/
+
+.technology__list,
+.technology__article {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.technology .technology__section {
+    margin-left: 7rem;
+}
+
+.technology .technology__section .technology__title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    letter-spacing: 4.75px;
+    margin-bottom: 5rem;
+}
+
+.technology__list {
+    margin-right: 3rem;
+}
+
+.technology__button {
+    background-color: transparent;
+    color: var(--primary-clear);
+    font-family: var(--font-sub-heading);
+    font-size: 1.75rem;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.699);
+}
+
+.technology__list .technology__item:first-child .technology__button {
+    padding: 15px 27px;
+}
+
+.technology__list .technology__item {
+    margin: 2rem 0;
+}
+
+.technology__button:hover {
+    border-color: var(--primary-clear);
+}
+
+.technology__button:active {
+    background-color: var(--primary-clear);
+    color: var(--primary);
+}
+
+.technology .technology__section .technology__subtitle {
+    color: rgba(128, 128, 128, 0.699);
+}
+
+.technology .technology__article {
+    width: 500px;
+    height: 250px;
+}
+
+.technology .technology__article .technology__subtitle--caption {
+    font-family: var(--font-heading);
+    font-size: .80rem;
+    letter-spacing: 4.75px;
+    color: var(--primary-assets);
+}
+
+.technology .technology__article .technology__title--text {
+    font-family: var(--font-sub-heading);
+    font-size: 3.5rem;
+    margin: .80rem 0 1rem 0;
+}
+
+.technology .technology__article .technology__text {
+    font-family: var(--font-text);
+    font-size: .90rem;
+    color: var(--primary-assets);
+    line-height: .7cm;
+}
+
+.technology__aside {
+    margin-top: 2rem;
+    width: 500px;
+    height: 450px;
+}
+
+.technology__aside img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.is-active-technology {
+    background-color: var(--primary-clear);
+    color: var(--primary);
+}
+
+
+/**************/

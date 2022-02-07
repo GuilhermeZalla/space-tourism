@@ -1,0 +1,148 @@
+/* 1. Gerais
+/* 2. Container
+/* 3. Header
+/* 4. Main - Destination
+/**************/
+
+
+/* 1. Gerais
+/**************/
+
+body {
+    background-image: url(/assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-clear);
+    height: 670px;
+}
+
+a {
+    color: var(--primary-clear);
+}
+
+
+/**************/
+
+
+/* 2. Container
+/**************/
+
+.destination {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/**************/
+
+
+/* 3. Header
+/**************/
+
+.header .header__navbar {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.158);
+}
+
+
+/**************/
+
+
+/* 4. Main - Destination
+/**************/
+
+.destination__aside>img {
+    width: 380px;
+    margin-left: 6rem;
+}
+
+.destination__aside .destination__list {
+    margin: 1rem 0 3rem 0;
+}
+
+.destination__item {
+    font-family: var(--font-heading);
+}
+
+.destination__aside .destination__item {
+    font-size: 1.75rem;
+    display: inline-block;
+    letter-spacing: 4.75px;
+    margin: 0 8px;
+}
+
+.destination__aside .destination__list .destination__item:first-child {
+    color: rgba(128, 128, 128, 0.699);
+    font-weight: bold;
+}
+
+.destination__section {
+    width: 400px;
+}
+
+.destination__section .destination__item {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.destination__title {
+    font-family: var(--font-sub-heading);
+    font-size: 6.25rem;
+}
+
+.destination__section .destination__list:first-child {
+    margin-bottom: 3.4rem;
+}
+
+.destination__link {
+    padding-bottom: 15px;
+    color: var(--primary-assets);
+    cursor: pointer;
+}
+
+.destination__section .destination__list:first-child .destination__item a:hover {
+    color: var(--primary-clear);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.877);
+}
+
+.destination__section .destination__list:first-child .destination__item a:active {
+    color: var(--primary-clear);
+    border-bottom: 2px solid var(--primary-clear);
+}
+
+.is-active-destination {
+    color: var(--primary-clear);
+}
+
+.destination__section .destination__description {
+    font-family: var(--font-text);
+    color: var(--primary-assets);
+    font-size: .90rem;
+    line-height: .7cm;
+}
+
+.destination__hr {
+    margin: 2.4rem 0 1.4rem 0;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+}
+
+.destination__section .destination__list:last-child .destination__item {
+    color: var(--primary-assets);
+    font-size: .80rem;
+    line-height: .9cm;
+}
+
+.destination__section .destination__list:last-child .destination__item .is-value {
+    font-family: var(--font-sub-heading);
+    font-size: 1.6rem;
+    color: var(--primary-clear);
+}
+
+.destination__section .destination__list:last-child .destination__item:last-child {
+    margin-left: 3rem;
+}
+
+
+/**************/
