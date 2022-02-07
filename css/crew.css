@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--primary-clear);
+    height: 100%;
 }
 
 a {
@@ -119,7 +120,7 @@ a {
 }
 
 .crew__aside img {
-    width: 500px;
+    width: auto;
     height: 500px;
     object-fit: cover;
 }
