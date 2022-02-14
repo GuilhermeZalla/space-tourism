@@ -44,9 +44,13 @@ a {
     justify-content: space-around;
     padding: 0 50px;
     flex-wrap: wrap-reverse;
-    margin-bottom: 50px;
 }
 
+@media screen and (min-width: 601px) and (max-width: 990px) {
+    .crew {
+        margin-bottom: 50px;
+    }
+}
 
 /**************/
 
