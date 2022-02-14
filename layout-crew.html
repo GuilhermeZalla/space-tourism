@@ -18,28 +18,47 @@
         <div class="header__div">
             <img class="header__logo" src="assets/shared/logo.svg" alt="Space Tourism web site logo">
         </div>
-        <hr class="header__hr">
+        <hr class="header__hr is-desktop-only">
         <nav class="header__navbar">
             <ul class="header__list">
                 <li class="header__item">
-                    <a class="header__link is-hover-active" href="index.html" target="_self" rel="prev" hreflang="en" aria-label="Go to home"><strong>00</strong> HOME</a>
+                    <a class="header__link is-hover-active" href="index.html" target="_self" rel="prev" hreflang="en" aria-label="Go to home"><strong class="is-desktop-only">00</strong> HOME</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link" href="layout-destination.html" target="_self" rel="prev" hreflang="en" aria-label="Go to destinations"><strong>01</strong> DESTINATION</a>
+                    <a class="header__link" href="layout-destination.html" target="_self" rel="prev" hreflang="en" aria-label="Go to destinations"><strong class="is-desktop-only">01</strong> DESTINATION</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link is-active" href="layout-crew.html" aria-label="Go to crew"><strong>02</strong> CREW</a>
+                    <a class="header__link is-active" href="layout-crew.html" aria-label="Go to crew"><strong class="is-desktop-only">02</strong> CREW</a>
                 </li>
                 <li class="header__item">
-                    <a class="header__link is-hover-active" href="layout-technology.html" target="_self" rel="next" hreflang="en" aria-label="Go to technologies"><strong>03</strong> TECHNOLOGY</a>
+                    <a class="header__link is-hover-active" href="layout-technology.html" target="_self" rel="next" hreflang="en" aria-label="Go to technologies"><strong class="is-desktop-only">03</strong> TECHNOLOGY</a>
                 </li>
             </ul>
         </nav>
+        <div class="header__div--mobile">
+            <a href="#" aria-label="Click here to open mobile menu"><img src="/assets/shared/icon-hamburger.svg" alt="Hambuguer mobile menu icon"></a>
+            <nav class="header__navbar--mobile">
+                <ul class="header__list--mobile">
+                    <li class="header__item--mobile">
+                        <a class="header__link--mobile" href="index.html" aria-label="Go to home"><strong>00</strong> HOME</a>
+                    </li>
+                    <li class="header__item--mobile">
+                        <a class="header__link--mobile" href="layout-destination.html" target="_self" rel="next" hreflang="en" aria-label="Go to destinations"><strong>01</strong> DESTINATION</a>
+                    </li>
+                    <li class="header__item--mobile">
+                        <a class="header__link--mobile" href="layout-crew.html" target="_self" rel="next" hreflang="en" aria-label="Go to crew"><strong>02</strong> CREW</a>
+                    </li>
+                    <li class="header__item--mobile">
+                        <a class="header__link--mobile" href="layout-technology.html" target="_self" rel="next" hreflang="en" aria-label="Go to technologies"><strong>03</strong> TECHNOLOGY</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Crew Header -->
     <main class="crew">
         <section class="crew__section">
-            <h1 class="crew__title"><span class="crew__subtitle">02</span> MEET YOUR CREW</h1>
+            <h1 class="crew__title is-desktop-only"><span class="crew__subtitle">02</span> MEET YOUR CREW</h1>
             <article class="crew__article">
                 <h3 class="crew__caption">COMMANDER</h3>
                 <h2 class="crew__title-name">DOUGLAS HURLEY</h2>
@@ -66,6 +85,7 @@
             <img class="crew__photo" src="assets/crew/image-douglas-hurley.png" alt="Photo of Commander Douglas Hurley">
         </aside>
         <!-- Crew Aside -->
+        <h1 class="crew__title--mobile"><span class="crew__subtitle">02</span> MEET YOUR CREW</h1>
     </main>
     <!-- Crew Main -->
     <script src="js/crew.js"></script>

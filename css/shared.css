@@ -115,5 +115,44 @@ a {
     padding-bottom: 25px;
 }
 
+.header__div--mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .is-desktop-only {
+        display: none;
+    }
+    .header {
+        margin-top: 2rem;
+    }
+    .header .header__div {
+        margin-left: 20px;
+    }
+    .header .header__navbar {
+        display: none;
+    }
+    .header__div--mobile {
+        display: block;
+        margin-right: 20px;
+    }
+    .header__div--mobile .header__navbar--mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 990px) {
+    .is-desktop-only {
+        display: none;
+    }
+    .header .header__navbar {
+        margin: 0;
+        background-color: rgba(82, 80, 80, 0.26);
+    }
+    .header__navbar .header__list {
+        margin: 10px 10px;
+    }
+}
+
 
 /**************/

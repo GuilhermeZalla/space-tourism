@@ -13,6 +13,18 @@ body {
     background-size: cover;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(/assets/home/background-home-mobile.jpg);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 990px) {
+    body {
+        background-image: url(/assets/home/background-home-tablet.jpg);
+    }
+}
+
 
 /**************/
 
@@ -24,6 +36,18 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .cover {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 990px) {
+    .cover {
+        display: block;
+    }
 }
 
 
@@ -58,6 +82,10 @@ body {
     line-height: .7cm;
 }
 
+.cover__div {
+    position: relative;
+}
+
 .cover .cover__button {
     background-color: var(--primary-clear);
     border: none;
@@ -67,10 +95,6 @@ body {
     cursor: pointer;
 }
 
-.cover__div {
-    position: relative;
-}
-
 .cover__button img {
     position: absolute;
     z-index: 1;
@@ -78,9 +102,10 @@ body {
     left: 35%;
     width: 80px;
     display: none;
-    animation-name: fly;
-    animation-duration: 25s;
-    animation-iteration-count: 1;
+    animation: fly 20s 1 normal;
+    -o-animation: fly 20s 1 normal;
+    -webkit-animation: fly 20s 1 normal;
+    -moz-animation: fly 20s 1 normal;
 }
 
 @keyframes fly {
@@ -176,6 +201,216 @@ body {
     color: var(--primary);
     font-size: 2rem;
     font-family: var(--font-sub-heading);
+}
+
+@media screen and (max-width: 600px) {
+    .cover .cover__section {
+        margin-top: 4rem;
+        text-align: center;
+    }
+    .cover .cover__section>.cover__title-caption {
+        font-size: 1.35rem;
+    }
+    .cover .cover__section>.cover__title {
+        font-size: 7.4rem;
+        margin: 1rem 0;
+    }
+    .cover .cover__section>.cover__text {
+        font-size: 1rem;
+    }
+    .cover__div {
+        margin: auto;
+        width: 250px;
+        height: 500px;
+        position: relative;
+    }
+    .cover .cover__button {
+        margin-top: 10rem;
+    }
+    .cover__button img {
+        animation: fly 25s 1 normal;
+        -o-animation: fly 25s 1 normal;
+        -webkit-animation: fly 25s 1 normal;
+        -moz-animation: fly 25s 1 normal;
+    }
+    @keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        5% {
+            bottom: 120%;
+        }
+        10% {
+            bottom: 120%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 130%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 150%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
+    @-o-keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        5% {
+            bottom: 120%;
+        }
+        10% {
+            bottom: 120%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 130%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 150%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
+    @-moz-keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        5% {
+            bottom: 120%;
+        }
+        10% {
+            bottom: 120%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 130%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 150%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
+    @-webkit-keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        5% {
+            bottom: 120%;
+        }
+        10% {
+            bottom: 120%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 130%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 150%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 990px) {
+    .cover .cover__section {
+        margin-top: 8rem;
+        text-align: center;
+    }
+    .cover .cover__section>.cover__text {
+        font-size: 1rem;
+    }
+    .cover__div {
+        margin: auto;
+        width: 250px;
+        height: 500px;
+        position: relative;
+    }
+    .cover .cover__button {
+        margin-top: 10rem;
+    }
+    @keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        5% {
+            bottom: 130%;
+        }
+        10% {
+            bottom: 130%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 150%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 150%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
+    @-o-keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        10% {
+            bottom: 15%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 70%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 60%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
+    @-moz-keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        10% {
+            bottom: 15%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 70%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 60%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
+    @-webkit-keyframes fly {
+        0% {
+            bottom: -10%;
+        }
+        10% {
+            bottom: 15%;
+            transform: rotate(-80deg) translateY(-150px);
+        }
+        20% {
+            bottom: 70%;
+            transform: rotate(-100deg) translateY(-900px);
+        }
+        100% {
+            left: -350%;
+            bottom: 60%;
+            transform: rotate(10deg) translateY(-900px);
+        }
+    }
 }
 
 
